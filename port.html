@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    <div id="portcontainer" class="body">
+      
+       <!-- <div class="logo">
+            <img src="images/4.jpeg" alt="">
+        </div>-->
+          <h1>  WELCOME </h1>
+        <div class="Tittle">
+            <h2>Hello Am David Osano </h2>
+            <p>Welcome to my portfolio feel free and inquire more</p>
+            <div class="me">
+                <img src="images/f.png" alt="">  
+            </div>
+        </div>
+        <button class="open-btn" id="menuButton">☰</button>
+    
+        <div id="mySidebar" class="sidebar">
+            <button class="close-btn" id="closeButton">×</button>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="form2">
+            <form action="#" method="POST">
+                <h3>Login  Here</h3>
+                <label for="text">Email</label>
+                <input type="text" required>
+                <label for="text">Password</label>
+                <input type="text" required>
+                <button type="submit" class="login">Login</button>
+            </form>
+        </div>
+        <div class="form">
+            <form action="#" method="POST">
+                <h3>Register  Here</h3>
+                <label for="text">Name</label>
+                <input type="text" required>
+                <label for="text">Email</label>
+                <input type="text" required>
+                <label for="text">Password</label>
+                <input type="text" required>
+                <button type="submit" class="register">Register</button>
+            </form>
+        </div>
+    </div> 
+    <div id="portsec1">
+        <h2 class="welcome">Welcome Again</h2>
+        <div class="About">
+            <h3>About</h3>
+            <p>Am David Osano </p>
+            <p>Taking computer Science </p>
+            <p>I hope you are also interested in knowing the much I have known </p>
+            <p>I have better understanding in all tha ama doing  ,am able to:
+                <br>teach them <br> develop <br> create new ideas
+            </p>
+            <p>Apart from that am able to work with a acommunity by promoting each others ideas so that we can develope
+                something more intresting
+            </p>
+        </div>
+                <div class="About">
+            <h3>About</h3>
+            <p>Am David Osano </p>
+            <p>Taking computer Science </p>
+            <p>I hope you are also interested in knowing the much I have known </p>
+            <p>I have better understanding in all tha ama doing  ,am able to:
+                <br>teach them <br> develop <br> create new ideas
+            </p>
+            <p>Apart from that am able to work with a acommunity by promoting each others ideas so that we can develope
+                something more intresting
+            </p>
+        </div>
+                <div class="About">
+            <h3>About</h3>
+            <p>Am David Osano </p>
+            <p>Taking computer Science </p>
+            <p>I hope you are also interested in knowing the much I have known </p>
+            <p>I have better understanding in all tha ama doing  ,am able to:
+                <br>teach them <br> develop <br> create new ideas
+            </p>
+            <p>Apart from that am able to work with a acommunity by promoting each others ideas so that we can develope
+                something more intresting
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Side menu functionality
+            const menuButton = document.getElementById('menuButton');
+            const closeButton = document.getElementById('closeButton');
+            const sidebar = document.getElementById('mySidebar');
+            
+            menuButton.addEventListener('click', () => {
+                sidebar.style.width = '170px';
+                document.body.style.marginLeft = '170px';
+            });
+            
+            closeButton.addEventListener('click', () => {
+                sidebar.style.width = '0';
+                document.body.style.marginLeft = '0';
+            });
+        });
+    </script>
+</body>
+</html>

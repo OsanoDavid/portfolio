@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#portcontainer{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    transition: 1s;
+    overflow: hidden;
+    background-image:linear-gradient(rgba(0, 0, 255, 0.779), rgba(0, 128, 0, 0.756)), url(images/2.jpg );
+}
+/*------------sidebar-----------*/
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*background: linear-gradient(rgba(0, 0, 255, 0.598), rgba(0, 128, 0, 0.68));*/
+    background-color: rgb(36, 47, 61);
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.sidebar a {
+    top: 20px;
+    margin: 20x;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: block;
+    transition: 1s;
+    position: relative;
+
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 130px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+    top: 20px;
+    background-color: rgb(36, 47, 61);
+}
+
+.open-btn {
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+    width: 30px;
+    background-color: rgb(36, 47, 61);
+    color: #fff;
+}
+.logo img{
+    width: 35px;
+    position: relative;
+    border-radius: 50%;
+    left: 50px;
+    top: 20px;
+    color: aqua;
+    
+}
+h1{
+    color: rgb(255, 204, 138);
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    padding: 5px;
+    font-weight: bolder;
+}
+.Tittle{
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.Tittle h2{
+    color:blanchedalmond;
+    font-size: 2.3rem;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900px;
+}
+.Tittle p{
+    color:#fff;
+    font-size: 2rem;
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.Tittle img{
+    margin-top: 25px;
+    width: 20%;
+    border-radius: 50%;
+    height:43vh;
+    transition: tranform 1s ease;
+    cursor: pointer;
+}
+.Tittle img:hover{
+    transform: scale(1.05);
+}
+/*----------------register and login --------------*/
+.form{
+    background-color: rgba(100, 50, 50, 0.534);
+    width: 25%;
+    height: 50vh;
+    top: -200px;
+    position: relative;
+    left: 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 8px rgb(199, 15, 240);
+}
+.form2{
+    background-color: rgba(100, 50, 50, 0.534);
+    width: 25%;
+    height: 50vh;
+    top: -200px;
+    position: relative;
+    border-radius: 7px;
+    float: right;
+    right: 40px;
+    box-shadow: 0 0 8px rgb(199, 15, 240);
+}
+label{
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 5px;
+
+    font-size: 1.3rem;
+    color: azure;
+}
+
+input{
+    margin-bottom: 10px;
+    display: block;
+    padding: 1px;
+    position: relative;
+    text-align: center;
+    margin-left: 30px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    width: 70%;
+    border-radius: 7px;
+    font-size: 1.2rem;
+}
+.login, .register{
+    margin: 10px;
+    display: block;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    margin-left: 60px;
+    border: 2px solid #09ff09;
+    background-color: green;
+    width: 50%;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    box-shadow: 0 5px rgb(1, 255, 10);
+}
+
+.login:hover, .register:hover{
+    margin-left: 60px;
+    border: 2px solid #00fc00a8;
+    background-color: rgba(0, 128, 0, 0.354);
+}
+@media screen and (max-width:720px){
+        .sidebar {
+        height: 100%;
+        width: 30%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        /*background: linear-gradient(rgba(0, 0, 255, 0.598), rgba(0, 128, 0, 0.68));*/
+        background-color: rgb(36, 47, 61);
+        overflow-x: hidden;
+        transition: 1s;
+        padding-top: 60px;
+        z-index: 1;
+    }
+    #portcontainer{
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        transition: 1s;
+        background-image:linear-gradient(rgba(0, 0, 255, 0.779), rgba(0, 128, 0, 0.756)), url(images/2.jpg );
+    }
+    /*------------sidebar-----------*/
+    .sidebar a {
+        top: 10px;
+        margin: 10x;
+        padding: 15px 5px;
+        text-decoration: none;
+        font-size: 0.91rem;
+    }
+    .close-btn {
+        right: 140px;
+        font-size: 20px;
+        margin-left: 10px;
+        top: 10px;
+    }
+
+    .open-btn {
+        font-size: 20px;
+        left: 10px;
+        top: 10px;
+        width: 20px;
+        background-color: rgb(36, 47, 61);
+    }
+    .logo img{
+        width: 35px;
+        position: relative;
+        border-radius: 50%;
+        left: 50px;
+        top: 20px;
+        color: aqua;
+        
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    .Tittle h2{
+        font-size: 1.3rem;
+    }
+    .Tittle p{
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .Tittle img{
+        margin-top: 15px;
+        width: 20%;
+        border-radius: 50%;
+        height:23vh;
+        transition: tranform 1s ease;
+        cursor: pointer;
+    }
+    .Tittle img:hover{
+        transform: scale(1.05);
+    }
+    /*----------------register and login --------------*/
+    .form{
+        background-color: rgba(100, 50, 50, 0.534);
+        width: 25%;
+        height: 50vh;
+        top: -200px;
+        position: relative;
+        left: 20px;
+        border-radius: 7px;
+        box-shadow: 0 0 8px rgb(199, 15, 240);
+    }
+    .form2{
+        background-color: rgba(100, 50, 50, 0.534);
+        width: 25%;
+        height: 50vh;
+        top: -200px;
+        position: relative;
+        border-radius: 7px;
+        float: right;
+        right: 40px;
+        box-shadow: 0 0 8px rgb(199, 15, 240);
+    }
+    label{
+        display: inline-block;
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+        margin-left: 30px;
+        margin-top: 5px;
+
+        font-size: 1.3rem;
+        color: azure;
+    }
+
+    input{
+        margin-bottom: 10px;
+        display: block;
+        padding: 1px;
+        position: relative;
+        text-align: center;
+        margin-left: 30px;
+        border: 2px solid #fff;
+        background-color: transparent;
+        width: 70%;
+        border-radius: 7px;
+        font-size: 1.2rem;
+    }
+    .login, .register{
+        margin: 10px;
+        display: block;
+        padding: 5px;
+        position: relative;
+        text-align: center;
+        margin-left: 60px;
+        border: 2px solid #09ff09;
+        background-color: green;
+        width: 50%;
+        border-radius: 7px;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .login:hover, .register:hover{
+        margin-left: 60px;
+        border: 2px solid #00fc00a8;
+        background-color: rgba(0, 128, 0, 0.354);
+    }
+}
+#portsec1{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+   
+    background-image:linear-gradient(rgba(89, 89, 145, 0.779), rgba(106, 142, 106, 0.756));
+}
+.welcome{
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    margin: 20px;
+    color: #575757;
+    font-weight: bold;
+}
+.About{
+    position: relative;
+    width: 30%;
+    height: 60vh;
+    background:linear-gradient(rgba(89, 89, 145, 0.779), rgba(106, 142, 106, 0.756)) ;
+    border-radius: 7px;
+    box-shadow: 0 0 20px #575757;
+    border:1px solid #575757;
+    left: 20px;
+    transition: ease-in 1s;
+    display: inline-block;
+    margin: 10px;
+}
